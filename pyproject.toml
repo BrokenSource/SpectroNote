@@ -1,0 +1,25 @@
+[tool.poetry]
+name        = "SpectroNote"
+version     = "2024.3.6"
+description = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you."
+authors     = ["Tremeschin <tremeschin@users.noreply.github.com>"]
+license     = "AGPLv3-only"
+
+[[tool.poetry.packages]]
+include = "SpectroNote"
+
+[tool.poetry.scripts]
+main = "SpectroNote.__main__:main"
+
+[build-system]
+requires      = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python        = ">=3.10,<3.13"
+broken-source = "^2024.1.15"
+
+[tool.poetry.dev-dependencies]
+broken-source   = {path="../../", develop=true}
+shaderflow      = {path="../ShaderFlow", develop=true}
+moderngl-window = {path="../ShaderFlow/Custom/ModernGLW", develop=true}
