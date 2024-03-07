@@ -3,7 +3,7 @@ from . import *
 
 @define
 class SpectroNoteScene(ShaderFlowScene):
-    """Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you."""
+    """🎧 Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."""
     __name__ = "SpectroNote"
 
     # Scene parameters

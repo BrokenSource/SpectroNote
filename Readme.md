@@ -22,7 +22,7 @@
 
   <br>
 
-  **[**SpectroNote**](https://github.com/BrokenSource/SpectroNote)**: Piano-Perfect Audio Spectrogram. Unlock the hidden Absolute Pitch in you.
+  **[**SpectroNote**](https://github.com/BrokenSource/SpectroNote)**: Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you.
 </div>
 
 ![image](https://github.com/BrokenSource/SpectroNote/assets/29046864/23d2ab9f-0c02-45bd-89f0-d8e57b7d112b)
