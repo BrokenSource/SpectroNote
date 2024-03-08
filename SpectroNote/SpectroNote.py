@@ -18,7 +18,7 @@ class SpectroNoteScene(ShaderFlowScene):
         self.audio = self.add(ShaderFlowAudio(name="Audio", file="/path/to/audio.ogg"))
         self.spectrogram = self.add(ShaderFlowSpectrogram(audio=self.audio, smooth=True))
 
-        # Act immediately
+        # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20
         self.spectrogram.sample_rateio = 2
         self.spectrogram.fft_n = 13
@@ -36,6 +36,7 @@ class SpectroNoteScene(ShaderFlowScene):
         self.engine.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
 
     def pipeline(self):
+        yield from ShaderFlowScene.pipeline(self)
         yield ShaderVariable("uniform", "float", "iPianoSize",   self.piano_size)
         yield ShaderVariable("uniform", "float", "iBlackRatio",  self.black_ratio)
         yield ShaderVariable("uniform", "float", "iBorderRatio", self.border_ratio)
