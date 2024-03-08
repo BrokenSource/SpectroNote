@@ -84,7 +84,7 @@ void main() {
     fragColor.rgb = (abs(buv.x)>1) ? fragColor.rgb : (abs(buv.x)<0.5?vec3(0.25):vec3(0));
 
     // Horizontal line that snaps to the piano key where the mouse is
-    float mouse_key = (12*log2(get_frequency((mouse.y+1)/2)/440.0) + 69);
+    float mouse_key = (12*log2(get_frequency((mouse.y+1)/2)/440.0) + 69) + 0.5;
 
     if (int(mouse_key) == int(key)) {
         if (INSIDE_PIANO) {
