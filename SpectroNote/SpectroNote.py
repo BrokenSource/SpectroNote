@@ -15,6 +15,7 @@ class SpectroNoteScene(ShaderFlowScene):
     vertical:     bool  = False
 
     def build(self):
+        ShaderFlowScene.build(self)
         self.audio = self.add(ShaderFlowAudio(name="Audio", file="/path/to/audio.ogg"))
         self.spectrogram = self.add(ShaderFlowSpectrogram(audio=self.audio, smooth=True))
 
