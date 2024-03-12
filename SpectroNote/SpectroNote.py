@@ -2,7 +2,7 @@ from . import *
 
 
 @define
-class SpectroNoteScene(ShaderFlowScene):
+class SpectroNoteScene(Scene):
     """🎧 Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."""
     __name__ = "SpectroNote"
 
@@ -15,9 +15,9 @@ class SpectroNoteScene(ShaderFlowScene):
     vertical:     bool  = False
 
     def build(self):
-        ShaderFlowScene.build(self)
-        self.audio = self.add(ShaderFlowAudio(name="Audio", file="/path/to/audio.ogg"))
-        self.spectrogram = self.add(ShaderFlowSpectrogram(audio=self.audio, smooth=True))
+        Scene.build(self)
+        self.audio = ShaderFlowAudio(scene=self.scene, name="Audio", file="/path/to/audio.ogg")
+        self.spectrogram = ShaderFlowSpectrogram(scene=self.scene, audio=self.audio, smooth=True)
 
         # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20
@@ -34,10 +34,10 @@ class SpectroNoteScene(ShaderFlowScene):
             bins=1440,
         )
 
-        self.engine.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
+        self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
 
     def pipeline(self):
-        yield from ShaderFlowScene.pipeline(self)
+        yield from Scene.pipeline(self)
         yield ShaderVariable("uniform", "float", "iPianoSize",   self.piano_size)
         yield ShaderVariable("uniform", "float", "iBlackRatio",  self.black_ratio)
         yield ShaderVariable("uniform", "float", "iBorderRatio", self.border_ratio)
