@@ -13,6 +13,7 @@ class SpectroNoteScene(ShaderScene):
     black_ratio:  float = 0.5
     border_ratio: float = 0.1
     vertical:     bool  = False
+    tuning:       Hertz = 440
 
     def build(self):
         ShaderScene.build(self)
@@ -31,6 +32,7 @@ class SpectroNoteScene(ShaderScene):
         self.spectrogram.from_notes(
             **(PIANO_RANGE if self.piano_range else FULL_RANGE),
             piano=self.piano_bins,
+            tuning=self.tuning,
             bins=1440,
         )
 
