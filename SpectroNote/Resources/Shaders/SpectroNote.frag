@@ -43,7 +43,7 @@ void main() {
 
     // Get the spectrogram uv coordinate
     vec2 spectrogram_uv = vec2(lerp(iPianoSize, BLEED, 1-iPianoSize, 1-BLEED, suv.x), suv.y);
-    spectrogram_uv.x += iSpectrogramStill ? 0:iSpectrogramOffset;
+    spectrogram_uv.x += iSpectrogramScroll ? 0:iSpectrogramOffset;
 
     // Calculate the color
     vec2 intensity = pow(texture(iSpectrogram, spectrogram_uv).xy, vec2(0.35))/2;
