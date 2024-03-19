@@ -3,7 +3,7 @@ name        = "SpectroNote"
 version     = "2024.3.18"
 description = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."
 authors     = ["Tremeschin <tremeschin@users.noreply.github.com>"]
-license     = "AGPLv3-only"
+license     = "AGPL-3.0-only"
 
 [[tool.poetry.packages]]
 include = "SpectroNote"
