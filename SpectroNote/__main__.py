@@ -1,4 +1,8 @@
-from . import *
+import sys
+
+from Broken.Base import BrokenProfiler
+from SpectroNote import SPECTRONOTE
+from SpectroNote.SpectroNote import SpectroNoteScene
 
 
 def main():

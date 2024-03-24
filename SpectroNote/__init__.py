@@ -1,8 +1,6 @@
-import SpectroNote.Resources as SpectroNoteResources
-from ShaderFlow import *
-
 import Broken
-from Broken import *
+import SpectroNote.Resources as SpectroNoteResources
+from Broken.Project import BrokenProject
 
 SPECTRONOTE = BrokenProject(
     PACKAGE=__file__,
@@ -12,5 +10,3 @@ SPECTRONOTE = BrokenProject(
 )
 
 Broken.PROJECT = SPECTRONOTE
-
-from .SpectroNote import *
