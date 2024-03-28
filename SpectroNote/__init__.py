@@ -9,4 +9,4 @@ SPECTRONOTE = BrokenProject(
     RESOURCES=SpectroNoteResources,
 )
 
-Broken.PROJECT = SPECTRONOTE
+Broken.set_project(SPECTRONOTE)
