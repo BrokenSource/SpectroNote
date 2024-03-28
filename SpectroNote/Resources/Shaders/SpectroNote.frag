@@ -2,11 +2,6 @@
 // (c) 2024 CC BY-SA 4.0, Tremeschin, part of ShaderFlow project.
 */
 
-// Color Palette
-#define COLOR1 vec3(0.01060815, 0.01808215, 0.10018654)
-#define COLOR2 vec3(0.38092887, 0.12061482, 0.32506528)
-#define COLOR3 vec3(0.79650140, 0.10506637, 0.31063031)
-#define COLOR4 vec3(0.95922872, 0.53307513, 0.37488950)
 #define BLEED 0.005
 
 // Frequency -> Octave-like
@@ -47,8 +42,8 @@ void main() {
 
     // Calculate the color
     vec2 intensity = pow(texture(iSpectrogram, spectrogram_uv).xy, vec2(0.35))/15;
-    vec3 left  = palette(intensity.x, COLOR1, COLOR2, COLOR3, COLOR4);
-    vec3 right = palette(intensity.y, COLOR1, COLOR2, COLOR3, COLOR4);
+    vec3 left  = palette_magma(intensity.x);
+    vec3 right = palette_magma(intensity.y);
     fragColor  = vec4((left+right)/2, 1);
 
     // Constants based on the definitions
