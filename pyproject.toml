@@ -1,16 +1,13 @@
 [project]
-name         = "spectronote"
-version      = "2024.3.27"
-description  = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."
-authors      = [{name="Tremeschin", email="29046864+Tremeschin@users.noreply.github.com"}]
-readme       = "Readme.md"
-dependencies = [
-    "broken-source>=2024.1.15",
-]
-requires-python = ">=3.10"
+name        = "spectronote"
+version     = "0.0"
+description = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."
+authors     = [{name="Tremeschin", email="29046864+Tremeschin@users.noreply.github.com"}]
+readme      = "Readme.md"
+license     = "AGPL-3.0"
 
-[project.scripts]
-spectronote = "SpectroNote.__main__:main"
+[tool.rye]
+managed = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["SpectroNote"]
@@ -18,9 +15,3 @@ packages = ["SpectroNote"]
 [build-system]
 requires      = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.hatch.metadata]
-allow-direct-references = true
-
-[tool.rye]
-managed = true
