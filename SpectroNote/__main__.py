@@ -1,6 +1,6 @@
 import sys
 
-from Broken.Base import BrokenProfiler
+from Broken import BrokenProfiler
 from SpectroNote import SPECTRONOTE
 from SpectroNote.SpectroNote import SpectroNoteScene
 

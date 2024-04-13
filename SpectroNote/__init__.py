@@ -1,6 +1,6 @@
 import Broken
 import SpectroNote.Resources as SpectroNoteResources
-from Broken.Project import BrokenProject
+from Broken import BrokenProject
 
 SPECTRONOTE = BrokenProject(
     PACKAGE=__file__,
