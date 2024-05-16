@@ -29,7 +29,7 @@ class SpectroNoteScene(ShaderScene):
 
         # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20
-        self.spectrogram.sample_rateio = 2
+        # self.spectrogram.sample_rateio = 2
         self.spectrogram.fft_n = 13
 
         # # Define ranges
