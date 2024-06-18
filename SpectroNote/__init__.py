@@ -8,5 +8,3 @@ SPECTRONOTE = BrokenProject(
     APP_AUTHOR="BrokenSource",
     RESOURCES=SpectroNoteResources,
 )
-
-Broken.set_project(SPECTRONOTE)
