@@ -24,8 +24,8 @@ class SpectroNoteScene(ShaderScene):
 
     def build(self):
         ShaderScene.build(self)
-        self.audio = ShaderAudio(scene=self.scene, name="Audio", file="/path/to/audio.ogg")
-        self.spectrogram = ShaderSpectrogram(scene=self.scene, audio=self.audio, smooth=True)
+        self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
+        self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
 
         # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20

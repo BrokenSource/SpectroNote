@@ -1,6 +1,6 @@
 [project]
 name        = "spectronote"
-version     = "0.0"
+version     = "0.0.0"
 description = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."
 authors     = [{name="Tremeschin", email="29046864+Tremeschin@users.noreply.github.com"}]
 readme      = "Readme.md"
@@ -8,6 +8,9 @@ license     = "AGPL-3.0"
 
 [tool.rye]
 managed = true
+
+[project.scripts]
+spectronote = "SpectroNote.__main__:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["SpectroNote"]
