@@ -1,6 +1,6 @@
 [project]
 name        = "spectronote"
-version     = "0.4.0.dev1"
+version     = "0.0.0"
 description = "Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable."
 authors     = [{name="Tremeschin", email="29046864+Tremeschin@users.noreply.github.com"}]
 readme      = "Readme.md"

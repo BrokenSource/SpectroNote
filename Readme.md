@@ -1,4 +1,4 @@
-<sup>⚠️ **Warning**: This repository [**shouldn't be cloned alone**](https://brokensrc.dev/get/source) ⚠️</sup>
+<sup>⚠️ **Warning**: This repository [**shouldn't be cloned alone**](https://brokensrc.dev/get/source)</sup>
 
 <div align="center">
   <a href="https://brokensrc.dev"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/Master/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
