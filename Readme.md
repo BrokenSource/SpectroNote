@@ -1,7 +1,6 @@
-<sup>⚠️ **Warning**: This repository [**shouldn't be cloned alone**](https://brokensrc.dev/get/source)</sup>
-
+<sup>⚠️ **Warning**: This repository [**shouldn't be cloned alone**](https://brokensrc.dev/get/source), per [**monorepo**](https://github.com/BrokenSource/BrokenSource) structure</sup>
 <div align="center">
-  <a href="https://brokensrc.dev"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/Master/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
+  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/Master/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
   <h1>SpectroNote</h1>
   <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a <b>hidden</b> Absolute Pitch in <b>you</b>.
 </div>
