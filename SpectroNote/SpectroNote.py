@@ -24,12 +24,14 @@ class SpectroNoteScene(ShaderScene):
 
     def build(self):
         ShaderScene.build(self)
+        self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
         self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
         self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
 
         # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20
         # self.spectrogram.sample_rateio = 2
+        self.spectrogram.length = 10
         self.spectrogram.fft_n = 13
 
         # # Define ranges
@@ -42,8 +44,6 @@ class SpectroNoteScene(ShaderScene):
             tuning=self.tuning,
             bins=1440,
         )
-
-        self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
 
     def pipeline(self):
         yield from ShaderScene.pipeline(self)
