@@ -1,4 +1,6 @@
-<sup>⚠️ **Warning**: This repository [**shouldn't be cloned alone**](https://brokensrc.dev/get/source), per [**monorepo**](https://github.com/BrokenSource/BrokenSource) structure</sup>
+> [!IMPORTANT]
+> <sub>This repository is part of a [**monorepo**](https://github.com/BrokenSource/BrokenSource) and [**shouldn't be cloned alone**](https://brokensrc.dev/get/source)</sub>
+
 <div align="center">
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/Master/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
   <h1>SpectroNote</h1>
@@ -9,14 +11,14 @@
 
 # 🔥 Description
 
-> SpectroNote is an _mostly scientific_ **Audio Spectrogram** for the **empiricist** in you
+> SpectroNote is a _mostly scientific_ **Audio Spectrogram** for the **empiricist** in you
 
-- **✅ [**Reassigned Method**](https://en.wikipedia.org/wiki/Reassignment_method)**: Unlimited precision, lower blurrying, sharp basses `(soon™)`
-- **🛡️ Open Source**, Trust and Transparency, Cross Platform, Configurable
-- **📦 Export Videos**: Powered by the [**ShaderFlow**](https://github.com/BrokenSource/ShaderFlow) platform
-- **🎹 Side Piano**: Instantly find notes being played
-- **⏳ Real Time**: It's Python, scientifically made
-- **🎨 No Watermarks**, User First Experience
+- **✅ [**Reassigned Method**](https://en.wikipedia.org/wiki/Reassignment_method)**: unlimited precision, lower blurrying, sharp basses `(soon™)`
+- **🛡️ Open Source**, trust and transparency, cross platform, configurable
+- **📦 Export Videos**: powered by the [**ShaderFlow**](https://github.com/BrokenSource/ShaderFlow) platform
+- **🎹 Side Piano**: instantly find notes being played
+- **⏳ Real Time**: it's python, scientifically made
+- **🎨 No Watermarks**, user first experience
 
 <br>
 
