@@ -1,6 +1,6 @@
 # 🎧 SpectroNote
 
-{!include/install.md!}
+{% include-markdown "include/install.md" %}
 
 !!! warning "This project will receive further development soon"
     Changing recording device in real time or rendering files to videos
