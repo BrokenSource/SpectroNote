@@ -5,6 +5,14 @@
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
   <h1>SpectroNote</h1>
   <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a hidden <b>Absolute Pitch</b> in you.
+  <br>
+  <br>
+  <a href="https://pypi.org/project/spectronote/"><img src="https://img.shields.io/pypi/v/spectronote?label=PyPI&color=blue"></a>
+  <a href="https://pypi.org/project/spectronote/"><img src="https://img.shields.io/pypi/dw/spectronote?label=Installs&color=blue"></a>
+  <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/v/release/BrokenSource/SpectroNote?label=Release&color=green"></a>
+  <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=green"></a>
+  <a href="https://github.com/BrokenSource/SpectroNote/"><img src="https://img.shields.io/github/stars/BrokenSource/SpectroNote?label=Stars&color=orange&style=flat"></a>
+  <a href="https://discord.gg/KjqvcYwRHm"><img src="https://img.shields.io/discord/1184696441298485370?label=Discord&color=orange&style=flat"></a>
 </div>
 
 <br>
