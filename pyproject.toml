@@ -20,11 +20,11 @@ dependencies = [
     "shaderflow>=0.0.0",
 ]
 
-[tool.rye]
-managed = true
-
 [project.scripts]
 spectronote = "SpectroNote.__main__:main"
+
+[tool.rye]
+managed = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["SpectroNote"]
