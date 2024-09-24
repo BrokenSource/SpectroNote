@@ -22,6 +22,7 @@ dependencies = [
 
 [project.scripts]
 spectronote = "SpectroNote.__main__:main"
+spectro = "SpectroNote.__main__:main"
 
 [tool.rye]
 managed = true

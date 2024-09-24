@@ -1,5 +1,5 @@
 /*
-// (c) 2024 CC BY-SA 4.0, Tremeschin, part of ShaderFlow project.
+// (c) 2024 CC BY-SA 4.0, Tremeschin
 */
 
 #define BLEED 0.005
@@ -41,7 +41,7 @@ void main() {
     spectrogram_uv.x += iSpectrogramScroll ? 0:iSpectrogramOffset;
 
     // Calculate the color
-    vec2 intensity = pow(texture(iSpectrogram, spectrogram_uv).xy, vec2(0.35))/4;
+    vec2 intensity = pow(texture(iSpectrogram, spectrogram_uv).xy, vec2(0.35))/16;
     vec3 left  = palette_magma(intensity.x);
     vec3 right = palette_magma(intensity.y);
     fragColor  = vec4((left+right)/2, 1);
