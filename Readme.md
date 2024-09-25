@@ -3,7 +3,7 @@
 <!-- PyPI -->
 <div align="center">
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
-  <h1>SpectroNote</h1>
+  <h1 style="margin-top: 0">SpectroNote</h1>
   <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a hidden <b>Absolute Pitch</b> in you.
   <br>
   <br>
@@ -18,7 +18,7 @@
 
 <br>
 
-# 🔥 Description
+## 🔥 Description
 
 > SpectroNote is a _mostly scientific_ **Audio Spectrogram** for the **empiricist** in you
 
@@ -31,7 +31,7 @@
 
 <br>
 
-# 📸 Showcase
+## 📸 Showcase
 
 ![image](https://github.com/BrokenSource/SpectroNote/assets/29046864/23d2ab9f-0c02-45bd-89f0-d8e57b7d112b)
 
