@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > <sub>This repository is part of a [**monorepo**](https://github.com/BrokenSource/BrokenSource) and [**shouldn't be cloned alone**](https://brokensrc.dev/get/source)</sub>
-<!-- PyPI -->
+<!-- PyPI Start -->
 <div align="center">
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
   <h1 style="margin-top: 0">SpectroNote</h1>
@@ -37,11 +37,9 @@
 
 <sup><b>Image:</b> SpectroNote in Action, without the Reassigned Method</sup>
 
-<br>
-<br>
-
-<div align="center">
+<!-- Website end -->
+<br><br><div align="center">
   <h2>🍁 Learn More 🍁</h2>
-  <h3>✨ Check out my <a href="https://brokensrc.dev/pianola/get"><b>Awesome Website</b></a> instead of a boring Readme ✨</h3>
+  <h3>✨ Check out my <a href="https://brokensrc.dev/spectronote/get"><b>Awesome Website</b></a> instead of a boring Readme ✨</h3>
   <h5>Installation Guides, Usage, Tips, Code Reference and More!</h5>
 </div>
