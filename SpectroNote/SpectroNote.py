@@ -25,7 +25,6 @@ class SpectroNoteScene(ShaderScene):
     tuning:       Hertz = 440
 
     def build(self):
-        ShaderScene.build(self)
         self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
         self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
         self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
