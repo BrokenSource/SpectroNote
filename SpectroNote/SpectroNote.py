@@ -1,8 +1,10 @@
+from typing import Iterable
+
 from attr import define
 from ShaderFlow.Modules.Audio import ShaderAudio
 from ShaderFlow.Modules.Spectrogram import ShaderSpectrogram
 from ShaderFlow.Scene import ShaderScene
-from ShaderFlow.Variable import ShaderVariable
+from ShaderFlow.Variable import ShaderVariable, Uniform
 
 from Broken.Types import Hertz
 from SpectroNote import SPECTRONOTE
@@ -45,9 +47,9 @@ class SpectroNoteScene(ShaderScene):
             bins=1440,
         )
 
-    def pipeline(self):
+    def pipeline(self) -> Iterable[ShaderVariable]:
         yield from ShaderScene.pipeline(self)
-        yield ShaderVariable("uniform", "float", "iPianoSize",   self.piano_size)
-        yield ShaderVariable("uniform", "float", "iBlackRatio",  self.black_ratio)
-        yield ShaderVariable("uniform", "float", "iBorderRatio", self.border_ratio)
-        yield ShaderVariable("uniform", "bool",  "iVertical",    self.vertical)
+        yield Uniform("float", "iPianoSize",   self.piano_size)
+        yield Uniform("float", "iBlackRatio",  self.black_ratio)
+        yield Uniform("float", "iBorderRatio", self.border_ratio)
+        yield Uniform("bool",  "iVertical",    self.vertical)
