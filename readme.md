@@ -3,7 +3,7 @@
 
 <!-- PyPI Start -->
 <div align="center">
-  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/spectronote/resources/images/spectronote.png" width="200"></a>
+  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/spectronote/resources/images/logo.png" width="200"></a>
   <h1 style="margin-top: 0">SpectroNote</h1>
   <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a hidden <b>Absolute Pitch</b> in you.
   <br>
