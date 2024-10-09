@@ -1,13 +1,13 @@
 from typing import Iterable
 
 from attr import define
-from ShaderFlow.Modules.Audio import ShaderAudio
-from ShaderFlow.Modules.Spectrogram import ShaderSpectrogram
-from ShaderFlow.Scene import ShaderScene
-from ShaderFlow.Variable import ShaderVariable, Uniform
+from shaderflow.modules.audio import ShaderAudio
+from shaderflow.modules.spectrogram import ShaderSpectrogram
+from shaderflow.scene import ShaderScene
+from shaderflow.variable import ShaderVariable, Uniform
 
-from Broken.Types import Hertz
-from SpectroNote import SPECTRONOTE
+from broken.types import Hertz
+from spectronote import SPECTRONOTE
 
 
 @define
@@ -25,7 +25,7 @@ class SpectroNoteScene(ShaderScene):
     tuning:       Hertz = 440
 
     def build(self):
-        self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"SpectroNote.frag"
+        self.shader.fragment = SPECTRONOTE.resources.shaders/"spectronote.frag"
         self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
         self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
 

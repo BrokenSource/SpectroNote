@@ -1,7 +1,7 @@
 import sys
 
-from Broken import BrokenProfiler
-from SpectroNote.SpectroNote import SpectroNoteScene
+from broken import BrokenProfiler
+from spectronote.spectronote import SpectroNoteScene
 
 
 def main():

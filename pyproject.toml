@@ -21,14 +21,14 @@ dependencies = [
 ]
 
 [project.scripts]
-spectronote = "SpectroNote.__main__:main"
-spectro = "SpectroNote.__main__:main"
+spectronote = "spectronote.__main__:main"
+spectro = "spectronote.__main__:main"
 
 [tool.rye]
 managed = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["SpectroNote"]
+packages = ["spectronote"]
 
 [build-system]
 requires = ["hatchling", "hatch-fancy-pypi-readme"]
@@ -39,4 +39,4 @@ content-type = "text/markdown"
 
 [[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
 start-after = "<!-- PyPI Start -->"
-path = "Readme.md"
+path = "readme.md"
