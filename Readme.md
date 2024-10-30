@@ -8,13 +8,40 @@
   <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a hidden <b>Absolute Pitch</b> in you.
   <br>
   <br>
-  <a href="https://pypi.org/project/spectronote/"><img src="https://img.shields.io/pypi/v/spectronote?label=PyPI&color=blue"></a>
-  <a href="https://pypi.org/project/spectronote/"><img src="https://img.shields.io/pypi/dw/spectronote?label=Installs&color=blue"></a>
-  <a href="https://github.com/BrokenSource/BrokenSource"><img src="https://img.shields.io/github/v/tag/BrokenSource/BrokenSource?label=GitHub&color=orange"></a>
-  <a href="https://github.com/BrokenSource/SpectroNote/stargazers"><img src="https://img.shields.io/github/stars/BrokenSource/SpectroNote?label=Stars&style=flat&color=orange"></a>
-  <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/v/release/BrokenSource/SpectroNote?label=Release&color=light-green"></a>
-  <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=light-green"></a>
-  <a href="https://discord.gg/KjqvcYwRHm"><img src="https://img.shields.io/discord/1184696441298485370?label=Discord&style=flat&color=purple"></a>
+  <a href="https://pypi.org/project/spectronote/">
+    <img src="https://img.shields.io/pypi/v/spectronote?label=PyPI&color=blue">
+  </a>
+  <a href="https://pypi.org/project/spectronote/">
+    <img src="https://img.shields.io/pypi/dw/spectronote?label=Installs&color=blue">
+  </a>
+  <a href="https://github.com/BrokenSource/BrokenSource">
+    <img src="https://img.shields.io/github/v/tag/BrokenSource/BrokenSource?label=GitHub&color=orange">
+  </a>
+  <a href="https://github.com/BrokenSource/SpectroNote/stargazers">
+    <img src="https://img.shields.io/github/stars/BrokenSource/SpectroNote?label=Stars&style=flat&color=orange">
+  </a>
+  <a href="https://github.com/BrokenSource/SpectroNote/releases/">
+    <img src="https://img.shields.io/github/v/release/BrokenSource/SpectroNote?label=Release&color=light-green">
+  </a>
+  <a href="https://github.com/BrokenSource/SpectroNote/releases/">
+    <img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=light-green">
+  </a>
+  <a href="https://discord.gg/KjqvcYwRHm">
+    <img src="https://img.shields.io/discord/1184696441298485370?label=Discord&style=flat&color=purple">
+  </a>
+    <br>
+  <br>
+  <b>
+    Links:
+    <a href="https://brokensrc.dev/spectronote/">Quick Start</a> •
+    <a href="https://brokensrc.dev/get/releases/">Releases</a> •
+    <a href="https://brokensrc.dev/get/pypi/">PyPI</a> •
+    <a href="https://brokensrc.dev/get/docker/">Cloud/Docker</a> •
+    <a href="https://brokensrc.dev/get/source/">Cloning</a> •
+    <a href="https://brokensrc.dev/spectronote/">Documentation</a>
+  </b>
+  <br>
+  <sub><small>⭐️ Consider starring the project to help it grow! ⭐️</small></sub>
 </div>
 
 <br>
