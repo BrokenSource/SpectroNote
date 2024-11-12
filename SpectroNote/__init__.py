@@ -1,6 +1,7 @@
-import Broken
 import SpectroNote.Resources as SpectroNoteResources
-from Broken import BrokenProject
+from Broken import BrokenProject, __version__
+
+__version__ = __version__
 
 SPECTRONOTE = BrokenProject(
     PACKAGE=__file__,
