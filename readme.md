@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> <sub>This repository is part of a [**monorepo**](https://github.com/BrokenSource/BrokenSource) and [**shouldn't be cloned alone**](https://brokensrc.dev/get/source)</sub>
+> <sub>Get cloning instructions [**here**](https://brokensrc.dev/get/source)</sub>
 
 <!-- PyPI Start -->
 <div align="center">
@@ -70,9 +70,10 @@
 
 <sup><b>Image:</b> SpectroNote in Action, without the Reassigned Method</sup>
 
-<!-- Website end -->
-<br><br><div align="center">
-  <h2>🍁 Learn More 🍁</h2>
-  <h3>✨ Check out my <a href="https://brokensrc.dev/get/"><b>Awesome Website</b></a> instead of a boring Readme ✨</h3>
-  <h5>Installation Guides, Usage, Tips, Code Reference and More!</h5>
-</div>
+## 📦 Installation
+
+Head out to the [**official website**](https://brokensrc.dev/get) for the latest installation instructions and more!
+
+<a href="https://brokensrc.dev/get">
+  <img src="https://github.com/user-attachments/assets/8470c0d2-46de-4068-b9ce-a1261a6c0e69">
+</a>
