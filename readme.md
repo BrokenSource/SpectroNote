@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> <sub>Get cloning instructions [**here**](https://brokensrc.dev/get/source)</sub>
-
 <!-- PyPI Start -->
 <div align="center">
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
