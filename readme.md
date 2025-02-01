@@ -2,7 +2,7 @@
 <div align="center">
   <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/SpectroNote/Resources/Images/SpectroNote.png" width="200"></a>
   <h1 style="margin-top: 0">SpectroNote</h1>
-  <b>Piano-Perfect</b> Audio <b>Spectrogram</b>. Unlock a hidden <b>Absolute Pitch</b> in you.
+  <b>Piano-perfect</b> audio <b>spectrogram</b>. Unlock a hidden <b>absolute bitch</b> in you.
   <br>
   <br>
   <a href="https://pypi.org/project/spectronote/">
