@@ -1,12 +1,11 @@
 import sys
 
-from Broken import BrokenProfiler
-from SpectroNote.SpectroNote import SpectroNoteScene
-
+from broken import BrokenProfiler
+from spectronote import SpectroScene
 
 def main():
     with BrokenProfiler("SPECTRONOTE"):
-        spectronote = SpectroNoteScene()
+        spectronote = SpectroScene()
         spectronote.cli(sys.argv[1:])
 
 if __name__ == "__main__":
