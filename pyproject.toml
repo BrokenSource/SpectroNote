@@ -7,6 +7,9 @@ Download  = "https://brokensrc.dev/get/releases"
 Docs      = "https://brokensrc.dev/spectronote"
 Homepage  = "https://brokensrc.dev"
 
+[tool.hatch.metadata.hooks.custom]
+path = ".github/hatch_build.py"
+
 [project]
 name        = "spectronote"
 description = "🎧 Piano-perfect audio spectrogram. Unlock a hidden absolute pitch in you."
@@ -31,11 +34,5 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["spectronote"]
 
-[tool.hatch.metadata.hooks.custom]
-path = ".github/hatch_build.py"
-
 [tool.hatch.metadata]
 allow-direct-references = true
-
-[tool.hatch.build.targets.sdist]
-exclude = ["*"]
