@@ -1,7 +1,7 @@
 [project.urls]
+Funding   = "https://github.com/sponsors/Tremeschin/"
 GitHub    = "https://github.com/BrokenSource/SpectroNote"
 Changelog = "https://brokensrc.dev/about/changelog"
-Funding   = "https://brokensrc.dev/about/sponsors"
 Contact   = "https://brokensrc.dev/about/contact"
 Download  = "https://brokensrc.dev/get/releases"
 Docs      = "https://brokensrc.dev/spectronote"
