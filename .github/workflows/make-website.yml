@@ -1,0 +1,17 @@
+name: make-website
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: BrokenSource/BrokenSource@main
+
+      - name: Make Website
+        run: |
+          uv run --directory */${{github.event.repository.name}} \
+          mkdocs gh-deploy --force --no-history
