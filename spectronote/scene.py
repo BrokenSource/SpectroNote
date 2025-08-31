@@ -25,7 +25,6 @@ class SpectroScene(ShaderScene):
 
     def build(self):
         self.shader.fragment = SPECTRONOTE.RESOURCES.SHADERS/"spectronote.frag"
-        print(SPECTRONOTE.RESOURCES.SHADERS/"spectronote.frag")
         self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
         self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
 
