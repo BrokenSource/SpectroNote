@@ -1,6 +1,6 @@
 from typing import Iterable
 
-from attr import define
+from attrs import define
 from shaderflow.modules.audio import ShaderAudio
 from shaderflow.modules.spectrogram import ShaderSpectrogram
 from shaderflow.scene import ShaderScene
@@ -12,7 +12,6 @@ from spectronote import SPECTRONOTE
 @define
 class SpectroScene(ShaderScene):
     """🎧 Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable"""
-    __name__ = "SpectroNote"
 
     # Scene parameters
     piano_bins:   bool  = False

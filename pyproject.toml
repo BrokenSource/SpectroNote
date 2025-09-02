@@ -12,7 +12,7 @@ name        = "spectronote"
 description = "🎧 Piano-perfect audio spectrogram. Unlock a hidden absolute pitch in you."
 authors     = [{name="Tremeschin"}]
 dynamic     = ["keywords"]
-version     = "0.9.2"
+version     = "0.10.0"
 readme      = ".github/readme.md"
 license     = "AGPL-3.0"
 requires-python = ">=3.10"
