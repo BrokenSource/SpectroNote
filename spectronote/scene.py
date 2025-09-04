@@ -1,10 +1,10 @@
 from typing import Iterable
 
 from attrs import define
-from shaderflow.modules.audio import ShaderAudio
-from shaderflow.modules.spectrogram import ShaderSpectrogram
+from shaderflow.audio import ShaderAudio
 from shaderflow.scene import ShaderScene
-from shaderflow.variable import ShaderVariable, Uniform
+from shaderflow.spectrogram import ShaderSpectrogram
+from shaderflow.variable import Uniform
 
 from spectronote import SPECTRONOTE
 
@@ -44,7 +44,7 @@ class SpectroScene(ShaderScene):
             bins=1440,
         )
 
-    def pipeline(self) -> Iterable[ShaderVariable]:
+    def pipeline(self) -> Iterable[Uniform]:
         yield from ShaderScene.pipeline(self)
         yield Uniform("float", "iPianoSize",   self.piano_size)
         yield Uniform("float", "iBlackRatio",  self.black_ratio)
