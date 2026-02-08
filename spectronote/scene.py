@@ -11,7 +11,6 @@ from spectronote import SPECTRONOTE
 
 @define
 class SpectroScene(ShaderScene):
-    """🎧 Piano-Perfect Audio Spectrogram. Unlock a hidden Absolute Pitch in you. Lightning fast, reliable, customizable"""
 
     # Scene parameters
     piano_bins:   bool  = False
@@ -29,7 +28,6 @@ class SpectroScene(ShaderScene):
 
         # Act immediately, good visuals and precision
         self.spectrogram.dynamics.frequency = 20
-        # self.spectrogram.sample_rateio = 2
         self.spectrogram.length = 5
         self.spectrogram.fft_n = 13
 
