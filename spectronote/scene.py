@@ -30,9 +30,9 @@ class SpectroScene(ShaderScene):
         self.spectrogram.length = 5
         self.spectrogram.fft_n = 13
 
-        # # Define ranges
+        # Define ranges
         PIANO_RANGE = dict(start=21, end=108)
-        FULL_RANGE = dict(start=20.0, end=20000.0)
+        FULL_RANGE  = dict(start=20.0, end=20000.0)
 
         self.spectrogram.from_notes(
             **(PIANO_RANGE if self.piano_range else FULL_RANGE),

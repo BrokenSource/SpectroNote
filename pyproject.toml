@@ -1,15 +1,12 @@
 [project.urls]
 Funding   = "https://github.com/sponsors/Tremeschin/"
 GitHub    = "https://github.com/BrokenSource/SpectroNote"
-Changelog = "https://brokensrc.dev/about/changelog"
-Contact   = "https://brokensrc.dev/about/contact"
-Download  = "https://brokensrc.dev/get/releases"
-Docs      = "https://brokensrc.dev/spectronote"
-Homepage  = "https://brokensrc.dev"
+Changelog = "https://spectro.brokensrc.dev/about/changelog"
+Download  = "https://spectro.brokensrc.dev/get/releases"
 
 [project]
 name        = "spectronote"
-description = "🎧 Piano-perfect audio spectrogram. Unlock a hidden absolute pitch in you."
+description = "🎧 Piano-perfect audio spectrogram"
 authors     = [{name="Tremeschin"}]
 dynamic     = ["keywords"]
 version     = "0.10.0"
@@ -17,8 +14,8 @@ readme      = "readme.md"
 license     = "AGPL-3.0"
 requires-python = ">=3.10"
 dependencies = [
-    "broken-source @ git+https://github.com/BrokenSource/BrokenSource",
     "shaderflow @ git+https://github.com/BrokenSource/ShaderFlow",
+    "dearlog @ git+https://github.com/BrokenSource/DearLog",
 ]
 
 [project.scripts]
