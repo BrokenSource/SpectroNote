@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/spectronote/resources/images/logo.png" width="200"></a>
+  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/website/assets/images/logo.png" width="200"></a>
   <h1 style="margin-top: 0">SpectroNote</h1>
   <b>Piano-perfect</b> audio <b>spectrogram</b>. Unlock a hidden <b>absolute bitch</b> in you.
   <br>

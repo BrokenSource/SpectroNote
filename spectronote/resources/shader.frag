@@ -1,6 +1,8 @@
-/* Copyright (c) 2024-2025, CC BY-SA 4.0, Tremeschin */
+/* Copyright (c) 2024-, CC BY-SA 4.0, Tremeschin */
 
 #define BLEED 0.005
+
+precision mediump float;
 
 // Frequency -> Octave-like
 float to_scale(float frequency) {

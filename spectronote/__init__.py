@@ -7,11 +7,8 @@ __about__:   str = __meta__["Summary"]
 __author__:  str = __meta__["Author"]
 __version__: str = __meta__["Version"]
 
-from broken.project import BrokenProject
+from pathlib import Path
 
-SPECTRONOTE = BrokenProject(
-    PACKAGE=__file__,
-    APP_NAME="SpectroNote",
-)
+RESOURCES: Path = Path(__file__).parent/"resources"
 
 from spectronote.scene import SpectroScene
