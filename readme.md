@@ -8,8 +8,10 @@
     <a href="https://pypi.org/project/spectronote/"><img src="https://img.shields.io/pypi/dw/spectronote?label=%E2%86%93&color=blue"></a>
     <a href="https://github.com/BrokenSource/SpectroNote/"><img src="https://img.shields.io/github/v/tag/BrokenSource/SpectroNote?label=GitHub&color=orange"></a>
     <a href="https://github.com/BrokenSource/SpectroNote/stargazers/"><img src="https://img.shields.io/github/stars/BrokenSource/SpectroNote?label=Stars&style=flat&color=orange"></a>
+    <!-- <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/v/release/BrokenSource/SpectroNote?label=Release&color=light-green"></a> -->
+    <!-- <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=light-green"></a> -->
     <a href="https://discord.gg/KjqvcYwRHm"><img src="https://img.shields.io/discord/1184696441298485370?label=Discord&style=flat&color=purple"></a>
-    <br>
+  <br>
   <sub><small>⭐️ Consider starring the project to help it grow! ⭐️</small></sub>
   <br>
 </div>
