@@ -5,7 +5,7 @@ from shaderflow.audio import ShaderAudio, ShaderSpectrogram
 from shaderflow.scene import ShaderScene
 from shaderflow.variable import Uniform
 
-from spectronote import RESOURCES
+import spectronote
 
 
 @define
@@ -21,7 +21,7 @@ class SpectroScene(ShaderScene):
     tuning:       float = 440
 
     def build(self):
-        self.shader.fragment = RESOURCES/"shader.frag"
+        self.shader.fragment = (spectronote.resources/"spectronote.glsl")
         self.audio = ShaderAudio(scene=self, name="Audio", file="/path/to/audio.ogg")
         self.spectrogram = ShaderSpectrogram(scene=self, audio=self.audio, smooth=True)
 
