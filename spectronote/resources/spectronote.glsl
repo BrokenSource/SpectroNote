@@ -27,8 +27,8 @@ void main() {
     vec2 suv = astuv;
     vec2 mouse = iMouse;
 
-    // Vertical spectrogram (-> pitch ->)
-    if (iVertical) {
+    // Horizontal spectrogram (-> pitch ->)
+    if (iHorizontal) {
         suv = vec2(1 - suv.y, suv.x);
         mouse = vec2(1 - mouse.y, mouse.x);
     }
