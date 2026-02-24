@@ -1,11 +1,12 @@
 import sys
 
+import spectronote
 from spectronote import SpectroScene
 
 
 def main():
-    spectronote = SpectroScene()
-    spectronote.cli(*sys.argv[1:])
+    scene = SpectroScene()
+    scene.cli.meta(sys.argv[1:])
 
 if __name__ == "__main__":
     main()

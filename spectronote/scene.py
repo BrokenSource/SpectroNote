@@ -1,22 +1,22 @@
-from typing import Annotated, Iterable
+from pathlib import Path
+from typing import Annotated, Any, Iterable, Optional
 
 from attrs import Factory, define
-from pydantic import BaseModel, ConfigDict
+from cyclopts import Parameter
 from shaderflow.audio import ShaderAudio, ShaderSpectrogram
 from shaderflow.scene import ShaderScene
 from shaderflow.variable import Uniform
-from typer import Option
 
 import spectronote
 
 
-class SpectroConfig(BaseModel):
-    model_config = ConfigDict(use_attribute_docstrings=True)
+@define(kw_only=True)
+class SpectroConfig:
 
     # ---------------------------------|
     # Inputs
 
-    audio: Annotated[str, Option("--audio", "-a")] = "/path/to/audio.ogg"
+    audio: Annotated[Optional[Path], Parameter(group="Inputs")] = None
     """Path to the audio file to visualize or export video"""
 
     # Todo: Audio capture on shaderflow.audio overhaul
@@ -24,53 +24,63 @@ class SpectroConfig(BaseModel):
     # ---------------------------------|
     # Spectrogram
 
-    length: Annotated[float, Option("--length", "-l")] = 5.0
+    length: Annotated[float, Parameter(group="Style")] = 5.0
     """Length of the spectrogram in seconds"""
 
-    interpolate: Annotated[bool, Option(" /--step")] = True
+    interpolate: Annotated[bool, Parameter(group="Style")] = True
     """Don't interpolate frequencies between piano notes"""
 
     # ---------------------------------|
     # Mathematics
 
-    min: Annotated[str, Option("--min")] = "20.0"
+    min: Annotated[str, Parameter(group="Math")] = "20.0"
     """Minimum frequency (float) or piano note (int, 21 is A0) to display"""
 
-    max: Annotated[str, Option("--max")] = "20000.0"
+    max: Annotated[str, Parameter(group="Math")] = "20000.0"
     """Maximum frequency (float) or piano note (int, 108 is C8) to display"""
 
-    tuning: Annotated[float, Option("--tuning", "-t")] = 440.0
+    tuning: Annotated[float, Parameter(group="Math")] = 440.0
     """Frequency of the A4 note for telling notes"""
 
-    bins: Annotated[int, Option("--bins", "-b")] = 1440
+    bins: Annotated[int, Parameter(group="Math")] = 1440
     """Number of frequency bins in the spectrogram"""
 
-    fft_n: Annotated[int, Option("--fft-n", "-n")] = 13
+    fft_n: Annotated[int, Parameter(group="Math")] = 13
     """Context length for FFT (2**n samples)"""
 
     # ---------------------------------|
     # Piano helper
 
-    horizontal: Annotated[bool, Option("--horizontal", "-h")] = False
+    horizontal: Annotated[bool, Parameter(group="Piano")] = False
     """Orient the piano horizontally instead of vertically"""
 
-    piano: Annotated[float, Option("--piano")] = 0.05
+    piano: Annotated[float, Parameter(group="Piano")] = 0.05
     """Relative size of the piano keys on the sides"""
 
-    black: Annotated[float, Option("--black")] = 0.5
+    black: Annotated[float, Parameter(group="Piano")] = 0.5
     """How long are black keys compared to white keys"""
 
-    border: Annotated[float, Option("--border")] = 0.1
+    border: Annotated[float, Parameter(group="Piano")] = 0.1
     """Relative size of the border between white keys"""
 
+# ---------------------------------------------------------------------------- #
 
 @define
 class SpectroScene(ShaderScene):
     config: SpectroConfig = Factory(SpectroConfig)
 
+    def smartset(self, object: Any) -> Any:
+        if isinstance(object, SpectroConfig):
+            self.config = object
+        return object
+
     def commands(self):
-        self.cli.description = spectronote.__about__
-        self.cli.command(self.config, name="config")
+        self.cli.help = spectronote.__about__
+        self.cli.version = spectronote.__version__
+        self.cli.command(
+            SpectroConfig, name="config",
+            result_action=self.smartset
+        )
 
     def build(self):
         self.shader.fragment = (spectronote.resources/"spectronote.glsl")

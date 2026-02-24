@@ -12,6 +12,13 @@
     <!-- <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=light-green"></a> -->
     <a href="https://discord.gg/KjqvcYwRHm"><img src="https://img.shields.io/discord/1184696441298485370?label=Discord&style=flat&color=purple"></a>
   <br>
+  <b>
+    Links •
+    <a href="https://github.com/BrokenSource/SpectroNote/">GitHub</a> •
+    <a href="https://spectro.brokensrc.dev/">Documentation</a> •
+    <a href="https://github.com/sponsors/Tremeschin/">Support</a>
+  </b>
+  <br>
   <sub><small>⭐️ Consider starring the project to help it grow! ⭐️</small></sub>
   <br>
 </div>
@@ -32,3 +39,5 @@ SpectroNote is a fast audio spectrogram written in python.
 ## 📦 Installation
 
 🚧 Under maintenance 👷
+
+Run with <code><a href="https://docs.astral.sh/uv/">uvx</a> --from git+https://github.com/BrokenSource/SpectroNote spectro main</code>
