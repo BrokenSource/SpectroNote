@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://brokensrc.dev/spectronote"><img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/website/assets/images/logo.png" width="200"></a>
+  <img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/website/assets/images/logo.png" width="200">
   <h1 style="margin-top: 0">SpectroNote</h1>
   <span>Piano-perfect audio spectrogram</span>
   <br>
@@ -15,7 +15,7 @@
   <b>
     Links •
     <a href="https://github.com/BrokenSource/SpectroNote/">GitHub</a> •
-    <a href="https://spectro.brokensrc.dev/">Documentation</a> •
+    <a href="https://spectro.tremeschin.com/">Documentation</a> •
     <a href="https://github.com/sponsors/Tremeschin/">Support</a>
   </b>
   <br>
