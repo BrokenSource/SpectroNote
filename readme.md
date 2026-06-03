@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/website/assets/images/logo.png" width="200">
+  <img src="https://raw.githubusercontent.com/BrokenSource/SpectroNote/main/website/assets/logo.png" width="200">
   <h1>SpectroNote</h1>
   <span>Piano-perfect audio spectrogram</span>
   <br>
@@ -12,13 +12,6 @@
     <a href="https://github.com/BrokenSource/SpectroNote/releases/"><img src="https://img.shields.io/github/downloads/BrokenSource/SpectroNote/total?label=Downloads&color=light-green"></a>
     <a href="https://discord.gg/KjqvcYwRHm"><img src="https://img.shields.io/discord/1184696441298485370?label=Discord&style=flat&color=purple"></a>
   <br>
-  <b>
-    Links •
-    <a href="https://github.com/BrokenSource/SpectroNote/">GitHub</a> •
-    <a href="https://spectro.tremeschin.com/">Documentation</a> •
-    <a href="https://github.com/sponsors/Tremeschin/">Support</a>
-  </b>
-  <br>
   <sub><small>⭐️ Consider starring the project to help it grow! ⭐️</small></sub>
   <br>
 </div>
@@ -29,11 +22,9 @@
 
 SpectroNote is a fast audio spectrogram written in python.
 
-- [x] **Open Source**, trust and transparency, cross platform, configurable
 - [x] **Export Videos**: powered by the [**ShaderFlow**](https://github.com/BrokenSource/ShaderFlow) platform
 - [x] **Side Piano**: instantly find notes being played
 - [x] **Real Time**: it's python, scientifically made
-- [x] **No Watermarks**, user first experience
 
 ## 📦 Installation
 
@@ -44,3 +35,5 @@ uvx --python 3.13 spectronote --help
 ```
 
 Or add to your `pyproject.toml` dependencies for library usage.
+
+<b>Note:</b> Audio source defaults to the first loopback device, it may pick a wrong one or a microphone. Input selection will be handled in a future release, change it via `pavucontrol` on Linux or Settings on Windows/Mac for now.
