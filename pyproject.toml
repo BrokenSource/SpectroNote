@@ -2,12 +2,13 @@
 name        = "spectronote"
 description = "🎧 Piano-perfect audio spectrogram"
 authors     = [{name="Tremeschin"}]
-dynamic     = ["keywords"]
 version     = "0.10.0"
 readme      = "readme.md"
 license     = "AGPL-3.0"
 requires-python = ">=3.10"
 dependencies = [
+    "attrs",
+    "cyclopts",
     "dearlog",
     "shaderflow",
 ]
