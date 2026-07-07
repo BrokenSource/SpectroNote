@@ -1,10 +1,9 @@
 [project]
 name        = "spectronote"
 description = "🎧 Piano-perfect audio spectrogram"
-authors     = [{name="Tremeschin"}]
 version     = "0.10.0"
-readme      = "readme.md"
 license     = "AGPL-3.0"
+readme      = "readme.md"
 requires-python = ">=3.10"
 dependencies = [
     "attrs",
@@ -12,6 +11,9 @@ dependencies = [
     "dearlog",
     "shaderflow",
 ]
+
+[project.urls]
+GitHub = "https://github.com/BrokenSource/SpectroNote"
 
 [project.scripts]
 spectronote = "spectronote.__main__:main"
