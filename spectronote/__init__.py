@@ -1,10 +1,9 @@
 from dearlog import logger  # isort: split
 
-from importlib.metadata import metadata
-
-__meta__    = metadata(str(__package__))
-__about__   = __meta__.get("Summary")
-__version__ = __meta__.get("Version")
+__about__   = "🎧 Piano-perfect audio spectrogram"
+__package__ = "spectronote"
+__version__ = "0.11.0"
+__license__ = "AGPL-3.0"
 
 from pathlib import Path
 
