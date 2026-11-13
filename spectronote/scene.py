@@ -1,5 +1,6 @@
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Annotated, Any, Iterable, Optional
+from typing import Annotated, Any
 
 from attrs import Factory, define
 from cyclopts import Parameter
@@ -16,7 +17,7 @@ class SpectroConfig:
     # ---------------------------------|
     # Inputs
 
-    audio: Annotated[Optional[Path], Parameter(group="Inputs")] = None
+    audio: Annotated[Path | None, Parameter(group="Inputs")] = None
     """Path to the audio file to visualize or export video"""
 
     # Todo: Audio capture on shaderflow.audio overhaul
